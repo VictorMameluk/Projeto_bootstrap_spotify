@@ -1,0 +1,229 @@
+/*
+----Customizaçao geral ------*/
+
+html, body, #home {
+	height: 100%;
+	overflow-x: hidden;
+}
+
+body{
+	background: url(../assets/img/capa.png),
+				url(../assets/img/ruido.png),
+				linear-gradient(50deg,#ff4169, #7c26f8);
+	background-attachment: fixed;
+}
+
+/*
+------ Customizaçao dos textos -----*/
+
+h1{
+	font-size: 5em;
+	font-weight: 900;
+	letter-spacing: -0.05em;
+	color: #ffffff;
+	margin-bottom: 50px;
+}
+
+h2{
+	font-size: 3em;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+h3{
+	font-size: 2em;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+
+#album h2, h3 {
+	color:#642EFE;
+}
+
+#album p {
+	color: #000;
+}
+
+#servicos h2, p{
+	color:#ffffff;
+}
+
+
+
+/*
+------- Customizaçao do nav -------*/
+
+nav.navbar-transparente{
+	padding: 15px 100px;
+	background:rgba(0, 0, 0, 0.6);
+}
+
+.navbar-light .navbar-nav .nav-link{
+	color: #ffffff;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+	color:#1ed760;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(255,255,255,.5);
+    border-color: rgba(255,255,255,0.5);
+}
+
+.divisor{
+	width: 1px;
+	background:#ffffff;
+	margin: 12px 15px;
+}
+
+
+
+/*
+------ Customização dos conteúdos -------*/
+
+.capa{
+	text-align: center;
+}
+
+.btn-custom{
+	color: #ffffff;
+	border-radius: 500px;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	transition: background 0.4s, color 0.4s;
+}
+
+.btn-roxo{
+	background: #7c25f8;
+}
+
+.btn-roxo:hover{
+	color:#1ed760;
+	background: #000;
+}
+
+.btn-branco{
+	border:1px solid #ffffff;
+}
+
+.btn-branco:hover{
+	color:#1ed760;
+	border: 2px solid #000;
+	background: #000;
+	
+}
+
+
+.albuns{
+	padding: 10px 0;
+}
+
+.caixa{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #ffffff;
+}
+
+.rotacionar{
+	transform: rotate(30deg);
+	padding-left: 80px;
+}
+
+.img-fluid{
+	transition: opacity 2s ease-in-out;
+}
+
+/*
+------ Customização Footer ------*/
+
+footer{
+	background:#000;
+	padding: 50px 0 20px 0px;
+	position: relative;
+}
+
+footer ul{
+	list-style: none;
+}
+
+footer ul li{
+	float: right;
+	margin: 0 5px;
+}
+
+footer h4{
+	color: #A4A4A4;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+footer .navbar-nav a{
+	color: #ffffff;
+	font-size: 0.9em;
+}
+
+footer .navbar-nav a:hover{
+	color:#1ed760;
+	text-decoration: none;
+}
+
+/*
+-------- Customização Para telas -------------*/
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+	h1{
+		font-size: 3em;
+	}
+
+	.btn-custom{
+		margin: 10px 15px;
+	}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+		h1{
+		font-size: 4em;
+	}
+
+	.btn-custom{
+		margin: 10px 15px;
+	}
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+		h1{
+		font-size: 5em;
+	}
+
+	.btn-custom{
+		margin: 10px 5px;
+	}
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+		h1{
+		font-size: 6em;
+	}
+
+	.btn-custom{
+		margin: 10px 5px;
+	}
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+		h1{
+		font-size: 6em;
+	}
+
+	.btn-custom{
+		margin: 10px 5px;
+	}
+}
